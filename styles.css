@@ -1,3 +1,10 @@
+/* Ensure padding and borders are included in the width/height */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -165,4 +172,50 @@ body {
 
 .footer strong {
     font-weight: bold;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    /* Curved text size on mobile */
+    .curved-text-svg {
+        height: 110%;
+        position: absolute;
+        top: -20%; /* Adjust to bring the text closer to the image */
+    }
+    .curved-text-svg text {
+        font-size: 2.5rem; /* Make the text smaller on smaller screens */
+    }
+
+    /* Header */
+    header h1 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    /* Navigation buttons - Styling for mobile */
+    nav ul {
+        text-align: center; /* Center the navigation */
+        padding-left: 0; /* Remove left padding for cleaner alignment */
+    }
+
+    nav ul li {
+        display: inline-block; /* Make the buttons inline but spaced out */
+        margin: 10px; /* More space between buttons */
+        padding: 10px 20px; /* Add padding to make the clickable area larger */
+        border: 2px solid #6a0dad; /* Add a border around each item */
+        border-radius: 5px; /* Optional: rounded corners for a smoother look */
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #2a0b40; /* Ensure the link text is visible with the border */
+        padding: 12px 20px; /* Add more padding for easier tapping */
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        color: #fff; /* Change text color on hover */
+        background-color: #6a0dad; /* Change background color on hover */
+    }
 }
