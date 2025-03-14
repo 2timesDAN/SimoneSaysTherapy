@@ -1,0 +1,168 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3fc;
+    color: #333;
+}
+
+/* Header */
+header {
+    font-family: 'Playfair Display', serif;
+    background-color: #6a0dad;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    background: linear-gradient(to right, rgba(106, 13, 173, 0.9), rgba(255, 105, 180, 0.8));
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem; /* Make the font bigger */
+    padding: 15px 25px; /* Increase the size of the buttons */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4b0082;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to top, rgba(255, 204, 255, 0.7), rgba(106, 13, 173, 0.6));
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    letter-spacing: 1.5px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.cta-button {
+    font-family: 'Poppins', sans-serif;
+    padding: 12px 24px;
+    background-color: #6a0dad;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #5b0c8c;
+}
+
+/* Simone picture */
+.profile-pic {
+    width: 300px; /* Increased size */
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 60px auto 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* index orchid */ 
+body {
+    background: url('images/orchid6.jpg') no-repeat center 300px fixed;
+    background: linear-gradient(to bottom, rgba(106, 13, 173, 0.6), rgba(255, 255, 255, 0.7)), url('images/orchid6.jpg') no-repeat center 300px fixed;
+    background-size: cover;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1ms ease-out forwards;
+}
+
+/* Active class to trigger fade-in */
+.fade-in-active {
+    opacity: 1; /* Element becomes fully visible */
+    animation: fadeIn 2s ease-out forwards;
+}
+
+
+/* Header - Curved Text Styling */
+.curved-text-svg {
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    top: 5px; /* Adjust to bring the text closer to the image */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.curved-text-svg text {
+    font-family: 'Arial', sans-serif;
+    font-size: 3.2rem; /* Reduce font size */
+    fill: white;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6a0dad;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.footer strong {
+    font-weight: bold;
+}
