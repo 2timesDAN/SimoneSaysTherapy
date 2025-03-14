@@ -9,7 +9,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f3fc;
+    background: linear-gradient(to bottom, rgba(106, 13, 173, 0.6), rgba(255, 255, 255, 0.7)), url('images/orchid6.jpg') no-repeat center 000px fixed;
+    background-size: cover;
     color: #333;
 }
 
@@ -105,13 +106,6 @@ nav ul li a:hover {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* index orchid */ 
-body {
-    background: url('images/orchid6.jpg') no-repeat center 300px fixed;
-    background: linear-gradient(to bottom, rgba(106, 13, 173, 0.6), rgba(255, 255, 255, 0.7)), url('images/orchid6.jpg') no-repeat center 300px fixed;
-    background-size: cover;
-}
-
 /* Fade-in Animation */
 @keyframes fadeIn {
     0% {
@@ -174,6 +168,306 @@ body {
     font-weight: bold;
 }
 
+
+
+/* Header */
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #6a0dad;
+}
+
+.about p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Philosophy & Experience Sections */
+.philosophy,
+.experience {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.philosophy h2,
+.experience h2 {
+    font-size: 2rem;
+    color: #6a0dad;
+}
+
+.philosophy p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.experience ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.experience ul li {
+    background-color: #f2e1fa; /* Light lavender */
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* About Page - Different Background */
+.about-page {
+    background: url('images/orchid1.jpeg') no-repeat center fixed;
+    background-size: cover;
+    color: #2a0b40; /* Darker text for better readability */
+    position: relative;
+    min-height: 100vh; /* Ensure it covers the full page */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Optional: Add an overlay for better readability */
+.about-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); /* Light semi-transparent overlay */
+    z-index: -1;
+}
+
+.about-text {
+    font-size: 1.3rem; /* Increase text size */
+    font-weight: 300; /* Make text bolder */
+    color: #2a0b40; /* Darker shade for better readability */
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85); /* Light background for contrast */
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    line-height: 1.6; /* Improve spacing for readability */
+}
+
+.about-title {
+    font-size: 2.5rem; /* Increase size */
+    font-weight: bold;
+    color: #4b0082; /* Dark purple for strong contrast */
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase; /* Optional: Makes text all uppercase */
+}
+
+/* Centering the navigation buttons */
+.nav-buttons {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Styling for the "Get in Touch" button appearing multiple times */
+.contact-button {
+    text-align: center;
+    margin: 50px 0;
+}
+.get-in-touch {
+    background-color: #8c00ff; /* Orange, or choose another standout color */
+    font-size: 1.2rem;
+}
+.get-in-touch:hover {
+    background-color: #38006d; /* Darker shade on hover */
+}
+
+/* Centering the contact info section */
+.contact-info {
+    font-size: 1.5em; /* Increase font size */
+    font-weight: bold; /* Make text stand out */
+    text-align: center; /* Center align */
+    margin-bottom: 20px; /* Add spacing */
+    color: #2a0b40; /* Dark text for readability */
+}
+
+/* Contact Form */
+.contact-form {
+    text-align: center;
+    max-width: 600px;
+    margin: 30px auto;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form label {
+    font-weight: bold;
+    text-align: left;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.contact-form button:hover {
+    background-color: #5500a3;
+}
+
+/* Office Location */
+.office-location {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+.contact-page {
+    background: url('images/orchid2.jpeg') no-repeat center fixed;
+    background-size: cover;
+    color: #2a0b40; /* Dark text for readability */
+    position: relative;
+}
+
+/* Overlay */
+.contact-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.334); /* Light semi-transparent overlay */
+    z-index: -1;
+}
+
+.contact-address {
+    font-size: 1.8em; /* Even bigger for emphasis */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: #2a0b40;
+}
+
+.insurance-header {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.insurance {
+    position: relative;
+    background: url('images/orchid4.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+.insurance-section, .payment-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.insurance-list, .payment-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.insurance-list li, .payment-list li {
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.get-in-touch {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.get-in-touch .button {
+    background: #6a0dad;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.get-in-touch .button:hover {
+    background: #5a0ca3;
+}
+
+.insurance-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.insurance-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    width: 120px;
+    height: 120px; /* Adjust height to make logos more prominent */
+}
+
+.insurance-item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Add a semi-transparent overlay */
+body.insurance::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.764); /* Adjust the opacity and color as needed */
+    z-index: 1; /* Ensure it is above the background but below content */
+}
+
+/* Ensure the page content is above the overlay */
+body.insurance * {
+    position: relative;
+    z-index: 2;
+}
+
+
 /* Mobile-friendly adjustments */
 @media (max-width: 768px) {
     /* Curved text size on mobile */
@@ -184,12 +478,6 @@ body {
     }
     .curved-text-svg text {
         font-size: 2.5rem; /* Make the text smaller on smaller screens */
-    }
-
-    /* Header */
-    header h1 {
-        font-size: 2rem;
-        letter-spacing: 1px;
     }
 
     /* Navigation buttons - Styling for mobile */
