@@ -25,6 +25,12 @@ header {
     color: white;
 }
 
+/* Specific header style for index page */
+body.index-page header {
+    background: linear-gradient(to right, rgba(207, 135, 255, 0.616), rgba(254, 133, 193, 0.578));
+}
+
+
 header h1 {
     font-size: 3rem;
     margin: 0;
@@ -53,23 +59,19 @@ nav ul li a {
     transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #4b0082;
-    text-decoration: underline;
-}
 
 /* Hero Section */
 .hero {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    padding: 50px;
-    background: linear-gradient(to top, rgba(255, 204, 255, 0.7), rgba(106, 13, 173, 0.6));
+    padding: 30px;
+    background: linear-gradient(to top, rgba(255, 204, 255, 0.7), rgba(182, 80, 255, 0.6));
 }
 
 .hero h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    margin: 20px 0;
+    margin: 00px 0;
     letter-spacing: 1.5px;
 }
 
@@ -151,7 +153,7 @@ nav ul li a:hover {
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #6a0dad;
+    background-color: #8832c6;
     color: white;
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -278,7 +280,7 @@ header h1 {
 /* Centering the navigation buttons */
 .nav-buttons {
     text-align: center;
-    margin: 30px 0;
+    margin: 80px 0;
 }
 
 /* Styling for the "Get in Touch" button appearing multiple times */
@@ -286,13 +288,16 @@ header h1 {
     text-align: center;
     margin: 50px 0;
 }
+
 .get-in-touch {
     background-color: #8c00ff; /* Orange, or choose another standout color */
     font-size: 1.2rem;
 }
+
 .get-in-touch:hover {
     background-color: #38006d; /* Darker shade on hover */
 }
+
 
 /* Centering the contact info section */
 .contact-info {
@@ -370,17 +375,6 @@ header h1 {
     color: #2a0b40;
 }
 
-.insurance-header {
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-}
-
 body.insurance {
     position: relative;
     background: url('images/orchid4.jpg') no-repeat center fixed;
@@ -389,17 +383,17 @@ body.insurance {
 
 .insurance-section, .payment-section {
     text-align: center;
-    padding: 40px 20px;
+    padding: 00px 20px;
 }
 
 .insurance-list, .payment-list {
     list-style: none;
-    padding: 0;
+    padding: 0px;
     font-size: 1.2em;
 }
 
 .insurance-list li, .payment-list li {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.425);
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
@@ -437,7 +431,7 @@ body.insurance {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.471);
     padding: 15px;
     border-radius: 8px;
     width: 120px;
@@ -448,6 +442,12 @@ body.insurance {
     max-width: 100%;
     max-height: 100%;
 }
+
+.insurance-text {
+    font-weight: 600; /* Slightly bolder than normal */
+    font-size: 18px; /* Optional: Increase font size */
+}
+
 
 /* Add a semi-transparent overlay */
 body.insurance::before {
@@ -470,11 +470,14 @@ body.insurance * {
 
 /* Mobile-friendly adjustments */
 @media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Smaller font size for header on mobile */
+        margin: 10px 0; /* Adjust margins */
+    }
     /* Curved text size on mobile */
     .curved-text-svg {
-        height: 110%;
-        position: absolute;
-        top: -20%; /* Adjust to bring the text closer to the image */
+        height: 100%;
+        top: -10%;
     }
     .curved-text-svg text {
         font-size: 2.5rem; /* Make the text smaller on smaller screens */
@@ -505,5 +508,72 @@ body.insurance * {
     nav ul li a:hover {
         color: #fff; /* Change text color on hover */
         background-color: #6a0dad; /* Change background color on hover */
+    }
+
+    .profile-pic {
+        width: 250px; /* Make the profile picture smaller */
+        margin-top: 20px;
+    }
+
+    /* Hero Section Adjustments */
+    .hero h2 {
+        font-size: 2rem; /* Smaller heading for mobile */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+} 
+
+
+/* Default Styles for Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: center;  /* Center buttons horizontally */
+    align-items: center;  /* Center align the items */
+    gap: 20px;  /* Add space between the buttons */
+    margin-top: 20px;
+}
+
+.nav-buttons .cta-button {
+    text-decoration: none;
+    background-color: #7c22c5bc;  /* Keeping the original color */
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.nav-buttons .cta-button:hover {
+    background-color: #5b3c8b;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .nav-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;  /* Center the buttons horizontally */
+    }
+
+    .nav-buttons .cta-button {
+        margin-bottom: 0px; /* Space out the buttons */
+        width: 80%;  /* Buttons take up most of the screen width */
+    }
+    .contact-page::before {
+        background: rgba(255, 255, 255, 0.522); /* Light semi-transparent overlay */
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    .nav-buttons {
+        flex-direction: row; /* Align buttons in a row */
+        justify-content: center;  /* Keep the buttons closer to each other */
+    }
+
+    .nav-buttons .cta-button {
+        width: auto;  /* Ensure buttons are their natural width */
+        margin: 0;  /* Remove any extra margins */
     }
 }

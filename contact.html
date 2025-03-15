@@ -17,7 +17,6 @@
     <section class="nav-buttons fade-in">
         <a href="index.html" class="cta-button">Home</a>
         <a href="about.html" class="cta-button">About</a>
-        <a href="services.html" class="cta-button">Services</a>
         <a href="insurance.html" class="cta-button">Insurance & Payment</a>
     </section>
 
@@ -33,16 +32,16 @@
     <!-- Contact Form -->
     <section class="contact-form fade-in">
         <h2>Send a Message</h2>
-        <form action="submit_form.php" method="post">
+        <form onsubmit="sendEmail(event)">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
-
+        
             <label for="email">Your Email:</label>
             <input type="email" id="email" name="email" required>
-
+        
             <label for="message">Your Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
-
+        
             <button type="submit" class="cta-button">Send Message</button>
         </form>
     </section>

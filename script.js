@@ -25,3 +25,18 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', checkVisibility);
     checkVisibility(); // Run on page load to check if any elements are already in view
 });
+
+function sendEmail(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get form values
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    // Create mailto link
+    let mailtoLink = `mailto:simonegkl71@gmail.com?subject=Contact from ${encodeURIComponent(name)}&body=Email: ${encodeURIComponent(email)}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
+
+    // Open default email client
+    window.location.href = mailtoLink;
+}
