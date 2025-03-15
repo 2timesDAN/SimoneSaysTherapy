@@ -493,8 +493,7 @@ body.insurance * {
         display: inline-block; /* Make the buttons inline but spaced out */
         margin: 10px; /* More space between buttons */
         padding: 10px 20px; /* Add padding to make the clickable area larger */
-        border: 2px solid #6a0dad; /* Add a border around each item */
-        border-radius: 5px; /* Optional: rounded corners for a smoother look */
+
     }
 
     nav ul li a {
@@ -575,5 +574,38 @@ body.insurance * {
     .nav-buttons .cta-button {
         width: auto;  /* Ensure buttons are their natural width */
         margin: 0;  /* Remove any extra margins */
+    }
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 768px) {
+    /* Ensure the curved text stays above the image */
+    .curved-text-svg {
+        position: absolute;
+        top: 00%; /* Adjust vertical position to keep the text above the image */
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+        z-index: 10; /* Ensure the text stays above the image */
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust the font size for mobile screens */
+    .curved-text-svg text {
+        font-size: 3rem; /* Adjust to your preference */
+    }
+
+    /* Adjust the image size */
+    .profile-pic {
+        width: 80%;
+        height: auto;
+        display: block;
+    }
+
+    /* Ensure enough space around the text for smaller screens */
+    .header-content {
+        position: relative;
+        width: 100%;
+        min-height: 250px; /* Ensure there is enough space */
     }
 }
