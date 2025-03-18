@@ -28,6 +28,21 @@
     transform: scale(1.1);
 }
 
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    .language-switcher {
+        top: 10px;  /* Keep it at the top */
+        right: 10px;  /* Keep it to the right */
+        flex-direction: row;  /* Arrange flags horizontally */
+        gap: 8px;  /* Adjust the gap between flags */
+    }
+
+    /* Ensure flags are not hidden */
+    .language-switcher img {
+        width: 30px;  /* Keep flag size consistent */
+        height: auto;  /* Ensure proper aspect ratio */
+    }
+}
 
 
 
