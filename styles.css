@@ -8,7 +8,7 @@
 .language-switcher {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 10px ; 
     display: flex;
     gap: 10px;
     z-index: 1000;  /* Ensure it's above other elements */
@@ -64,6 +64,7 @@ header {
     text-align: center;
     background: linear-gradient(to right, rgba(106, 13, 173, 0.9), rgba(255, 105, 180, 0.8));
     color: white;
+    
 }
 
 /* Specific header style for index page */
@@ -503,7 +504,7 @@ body.insurance::before {
 }
 
 /* Ensure the page content is above the overlay */
-body.insurance * {
+body.insurance *:not(.language-switcher) {
     position: relative;
     z-index: 2;
 }
