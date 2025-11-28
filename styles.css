@@ -306,7 +306,7 @@ nav ul li a {
 }
 
 .get-in-touch {
-    background-color: #8c00ff; /* Orange, or choose another standout color */
+    background-color: #7c22c5bc; /* Orange, or choose another standout color */
     font-size: 1.2rem;
 }
 
@@ -753,3 +753,6 @@ body.insurance {
     margin-bottom: 40px;
 }
 
+.about-page .nav-buttons {
+    margin-top: 0px !important; /* or whatever value you want */
+}
