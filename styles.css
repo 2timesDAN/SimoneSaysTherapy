@@ -811,3 +811,7 @@ body.insurance {
 .footer-email:hover {
     text-decoration: underline;
 }
+
+.index-page .contact-button {
+    margin-top: 00px;   /* ← change to whatever you want */
+}
