@@ -35,8 +35,9 @@ function sendEmail(event) {
     let message = document.getElementById("message").value;
 
     // Create mailto link
-    let mailtoLink = `mailto:simonegkl71@gmail.com?subject=Contact from ${encodeURIComponent(name)}&body=Email: ${encodeURIComponent(email)}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
+    let mailtoLink = `mailto:LMHC.SIMONE.GOLDBERG@gmail.com?subject=Contact from ${encodeURIComponent(name)}&body=Email: ${encodeURIComponent(email)}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
 
     // Open default email client
     window.location.href = mailtoLink;
 }
+
