@@ -17,6 +17,11 @@
     border-radius: 5px; /* Optional: make it look nice */
 }
 
+.sr-only {
+  position: absolute;
+  left: -9999px;
+}
+
 .language-switcher img {
     width: 30px;
     height: auto;
@@ -814,4 +819,5 @@ body.insurance {
 
 .index-page .contact-button {
     margin-top: 00px;   /* ← change to whatever you want */
+
 }
