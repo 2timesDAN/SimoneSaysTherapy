@@ -1,48 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>http://intentionalheal.ing/</loc>
-  </url>
-
-  <url>
-    <loc>http://intentionalheal.ing/index.html</loc>
-  </url>
-
-  <url>
-    <loc>http://intentionalheal.ing/index-pt.html</loc>
-  </url>
-
-  <url>
-    <loc>http://intentionalheal.ing/about.html</loc>
-  </url>
-
-  <url>
-    <loc>http://intentionalheal.ing/about-pt.html</loc>
-  </url>
-
-  <url>
-    <loc>http://intentionalheal.ing/services.html</loc>
-  </url>
-
-  <url>
-    <loc>http://intentionalheal.ing/services-pt.html</loc>
-  </url>
-
-  <url>
-    <loc>http://intentionalheal.ing/contact.html</loc>
-  </url>
-
-  <url>
-    <loc>http://intentionalheal.ing/contact-pt.html</loc>
-  </url>
-
-  <url>
-    <loc>http://intentionalheal.ing/insurance.html</loc>
-  </url>
-
-  <url>
-    <loc>http://intentionalheal.ing/insurance-pt.html</loc>
-  </url>
-
+  <url><loc>https://intentionalheal.ing/</loc></url>
+  <url><loc>https://intentionalheal.ing/about.html</loc></url>
+  <url><loc>https://intentionalheal.ing/about-pt.html</loc></url>
+  <url><loc>https://intentionalheal.ing/services.html</loc></url>
+  <url><loc>https://intentionalheal.ing/services-pt.html</loc></url>
+  <url><loc>https://intentionalheal.ing/contact.html</loc></url>
+  <url><loc>https://intentionalheal.ing/contact-pt.html</loc></url>
+  <url><loc>https://intentionalheal.ing/insurance.html</loc></url>
+  <url><loc>https://intentionalheal.ing/insurance-pt.html</loc></url>
+  <url><loc>https://intentionalheal.ing/index-pt.html</loc></url>
 </urlset>
